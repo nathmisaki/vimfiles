@@ -3,3 +3,4 @@ bufexplorer.vba: call delete('/home/nelson/.vim/doc/bufexplorer.txt')|call delet
 rails.vba: call delete('/home/nelson/.vim/autoload/rails.vim')|call delete('/home/nelson/.vim/plugin/rails.vim')|call delete('/home/nelson/.vim/doc/rails.txt')
 supertab.vba: call delete('/home/nelson/.vim/doc/supertab.txt')|call delete('/home/nelson/.vim/plugin/supertab.vim')
 NERD_commenter.vba: call delete('/home/nelson/.vim/plugin/NERD_commenter.vim')|call delete('/home/nelson/.vim/doc/NERD_commenter.txt')
+Align.vba: call delete('/home/nelson/.vim/plugin/AlignPlugin.vim')|call delete('/home/nelson/.vim/plugin/AlignMapsPlugin.vim')|call delete('/home/nelson/.vim/plugin/cecutil.vim')|call delete('/home/nelson/.vim/doc/Align.txt')|call delete('/home/nelson/.vim/autoload/Align.vim')|call delete('/home/nelson/.vim/autoload/AlignMaps.vim')
