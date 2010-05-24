@@ -1,0 +1,19 @@
+" Place this file into your $HOME directory and edit at your will
+
+" This should be included to enable some common setups 
+source ~/.vim/vimrc_global
+
+" I prefer dark backgrounds
+set background=dark
+
+" Setting a fold column with 2 columns to show point of folding
+set foldcolumn=2
+
+" Mapping leader_key (defaults to \) + p to show NERDTree. 
+" \p -> toggle NERDTree
+map <silent> <Leader>p <Esc>:NERDTreeToggle<CR>
+
+" Mapping CTRL + F; in normal, visual, insert and command modes;
+" to show Command-T
+map <silent> <C-F> <Esc>:CommandT<CR>
+map! <silent> <C-F> <Esc>:CommandT<CR>
