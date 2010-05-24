@@ -1,1 +1,2 @@
 NERD_tree.vba: call delete('/home/nelson/.vim/doc/NERD_tree.txt')|call delete('/home/nelson/.vim/nerdtree_plugin/exec_menuitem.vim')|call delete('/home/nelson/.vim/nerdtree_plugin/fs_menu.vim')|call delete('/home/nelson/.vim/plugin/NERD_tree.vim')
+bufexplorer.vba: call delete('/home/nelson/.vim/doc/bufexplorer.txt')|call delete('/home/nelson/.vim/plugin/bufexplorer.vim')
