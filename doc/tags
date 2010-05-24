@@ -236,7 +236,7 @@ bufexplorer-windowlayout	bufexplorer.txt	/*bufexplorer-windowlayout*
 bufexplorer.txt	bufexplorer.txt	/*bufexplorer.txt*
 buffer-explorer	bufexplorer.txt	/*buffer-explorer*
 command-t	command-t.txt	/*command-t*
-command-t-author	command-t.txt	/*command-t-author*
+command-t-authors	command-t.txt	/*command-t-authors*
 command-t-commands	command-t.txt	/*command-t-commands*
 command-t-contents	command-t.txt	/*command-t-contents*
 command-t-donations	command-t.txt	/*command-t-donations*
