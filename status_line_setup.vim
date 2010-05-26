@@ -28,7 +28,7 @@ set statusline+=%*
 set statusline+=%{StatuslineLongLineWarning()}
 
 "if syntastic is installed show error line
-if exists("g:loaded_syntastic_plugin")
+if exists("loaded_syntastic_plugin")
   set statusline+=%#warningmsg#
   set statusline+=%{SyntasticStatuslineFlag()}
   set statusline+=%*
