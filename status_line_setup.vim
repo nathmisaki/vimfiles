@@ -27,6 +27,14 @@ set statusline+=%*
 
 set statusline+=%{StatuslineLongLineWarning()}
 
+"if syntastic is installed show error line
+if exists("g:loaded_syntastic_plugin")
+  set statusline+=%#warningmsg#
+  set statusline+=%{SyntasticStatuslineFlag()}
+  set statusline+=%*
+endif
+
+
 "display a warning if &paste is set
 set statusline+=%#error#
 set statusline+=%{&paste?'[paste]':''}

@@ -40,6 +40,11 @@ set linebreak   "wrap lines at convenient points
 "only status line setup open to details
 source ~/.vim/status_line_setup.vim
 
+"mark syntax errors with :signs
+if exists("loaded_syntastic_plugin")
+  let g:syntastic_enable_signs=1
+endif
+
 " Mapping leader_key (defaults to \) + p to show NERDTree. 
 " \p -> toggle NERDTree
 map <silent> <Leader>p <Esc>:NERDTreeToggle<CR>
