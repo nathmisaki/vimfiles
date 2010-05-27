@@ -51,3 +51,6 @@ map <silent> <Leader>p <Esc>:NERDTreeToggle<CR>
 " to show Command-T
 map <silent> <C-F> <Esc>:CommandT<CR>
 map! <silent> <C-F> <Esc>:CommandT<CR>
+
+" Mapping CTRL + B to show BufferExplorer
+nmap <silent> <C-B> :BufExplorer<CR>
