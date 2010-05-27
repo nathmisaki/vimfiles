@@ -129,3 +129,8 @@ endif
 " CTRL-U in insert mode deletes a lot.  Use CTRL-G u to first break undo,
 " so that you can undo CTRL-U after inserting a line break.
 inoremap <C-U> <C-G>u<C-U>
+
+" Disabling verbose on CSApprox.
+" This turn off an annoying warning on xterms with less than 88 colors and if
+" vim wasn't compiled with gui support
+let g:CSApprox_verbose_level = 0
