@@ -1,6 +1,6 @@
 " Place this file into your $HOME directory and edit at your will
 
-" This should be included to enable some common setups 
+" This should be included to enable some common setups
 source ~/.vim/vimrc_global
 
 " I prefer dark backgrounds
@@ -43,7 +43,11 @@ source ~/.vim/status_line_setup.vim
 "mark syntax errors with :signs
 let g:syntastic_enable_signs=1
 
-" Mapping leader_key (defaults to \) + p to show NERDTree. 
+" set default colorscheme
+" Use :SCROLLCOLOR to see all colors
+colorscheme vibrantink
+
+" Mapping leader_key (defaults to \) + p to show NERDTree.
 " \p -> toggle NERDTree
 map <silent> <Leader>p <Esc>:NERDTreeToggle<CR>
 
