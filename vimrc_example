@@ -49,6 +49,11 @@ colorscheme vibrantink
 " Setting ctermbg to none so the transparent background from gnome-terminal works for vibrantink
 highlight Normal ctermbg=none
 
+function ClearTrailingSpaces()
+  %s/\s\+$//g
+endfunction
+
+command ClearTrailingSpaces call ClearTrailingSpaces()
 
 " Mapping leader_key (defaults to \) + p to show NERDTree.
 " \p -> toggle NERDTree
@@ -61,3 +66,6 @@ map! <silent> <C-F> <Esc>:CommandT<CR>
 
 " Mapping CTRL + B to show BufferExplorer
 nmap <silent> <C-B> :BufExplorer<CR>
+
+" Mapping CTRL + L to insert => (hashrocket)
+imap <c-l> <space>=><space>
