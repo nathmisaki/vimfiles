@@ -1,20 +1,20 @@
 " Normally we use vim-extensions. If you want true vi-compatibility
 " remove change the following statements
-set nocompatible	" Use Vim defaults instead of 100% vi compatibility
+set nocompatible        " Use Vim defaults instead of 100% vi compatibility
 set backspace=indent,eol,start	" more powerful backspacing
 
 " Now we set some defaults for the editor
-set history=50		" keep 50 lines of command line history
-set ruler		" show the cursor position all the time
-set showcmd		" Show (partial) command in status line.
-set showmatch		" Show matching brackets.
-set ignorecase		" Do case insensitive matching
-set smartcase		" Do smart case matching
-set incsearch		" Incremental search
-set hlsearch 		" Highlight search by default
-set autowrite		" Automatically save before commands like :next and :make
-set hidden             	" Hide buffers when they are abandoned
-set mouse=a		" Enable mouse usage (all modes)
+set history=50          " keep 50 lines of command line history
+set ruler               " show the cursor position all the time
+set showcmd             " Show (partial) command in status line.
+set showmatch           " Show matching brackets.
+set ignorecase          " Do case insensitive matching
+set smartcase           " Do smart case matching
+set incsearch           " Incremental search
+set hlsearch            " Highlight search by default
+set autowrite           " Automatically save before commands like :next and :make
+set hidden              " Hide buffers when they are abandoned
+set mouse=a             " Enable mouse usage (all modes)
 
 " modelines have historically been a source of security/resource
 " vulnerabilities -- disable by default, even when 'nocompatible' is set
@@ -32,9 +32,9 @@ endif
 
 " Backup file strategy
 if has("vms")
-  set nobackup		" do not keep a backup file, use versions instead
+  set nobackup          " do not keep a backup file, use versions instead
 else
-  set backup		" keep a backup file
+  set backup            " keep a backup file
 endif
 
 " If using a dark background within the editing area and syntax highlighting
@@ -73,7 +73,7 @@ if has("autocmd")
 
 else
 
-  set autoindent		" always set autoindenting on
+  set autoindent " always set autoindenting on
 
 endif " has("autocmd")
 
@@ -82,7 +82,7 @@ endif " has("autocmd")
 " Only define it when not defined already.
 if !exists(":DiffOrig")
   command DiffOrig vert new | set bt=nofile | r # | 0d_ | diffthis
-		  \ | wincmd p | diffthis
+        \ | wincmd p | diffthis
 endif
 
 "define :HighlightLongLines command to highlight the offending parts of
@@ -134,3 +134,6 @@ inoremap <C-U> <C-G>u<C-U>
 " This turn off an annoying warning on xterms with less than 88 colors and if
 " vim wasn't compiled with gui support
 let g:CSApprox_verbose_level = 0
+
+" Adding some ProtectedRegions to AutoClose plugin
+let g:AutoCloseProtectedRegions = ["String", "Comment", "Character", "rubyString"]
