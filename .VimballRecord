@@ -20,3 +20,4 @@ colorsamplepack.vba: call delete('/home/nelson/.vim/colors/adaryn.vim')|call del
 matchit.vba: call delete('/home/nelson/.vim/plugin/matchit.vim')|call delete('/home/nelson/.vim/doc/matchit.txt')
 ruby-matchit.vba: call delete('/home/nelson/.vim/ftplugin/ruby/ruby-matchit.vim')
 endwise.vba: call delete('/home/nelson/.vim/ftplugin/ruby/endwise.vim')
+textile.vba: call delete('/home/nelson/.vim/doc/textile.txt')|call delete('/home/nelson/.vim/ftplugin/textile.vim')|call delete('/home/nelson/.vim/plugin/textile.vim')|call delete('/home/nelson/.vim/syntax/textile.vim')

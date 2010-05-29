@@ -622,6 +622,11 @@ syntastic-options	syntastic.txt	/*syntastic-options*
 syntastic-statusline-flag	syntastic.txt	/*syntastic-statusline-flag*
 syntastic-syntax-checkers	syntastic.txt	/*syntastic-syntax-checkers*
 syntastic.txt	syntastic.txt	/*syntastic.txt*
+textile-changelog	textile.txt	/*textile-changelog*
+textile-commands	textile.txt	/*textile-commands*
+textile-credits	textile.txt	/*textile-credits*
+textile-requirements	textile.txt	/*textile-requirements*
+textile.txt	textile.txt	/*textile.txt*
 vS	surround.txt	/*vS*
 v_[%	matchit.txt	/*v_[%*
 v_]%	matchit.txt	/*v_]%*
