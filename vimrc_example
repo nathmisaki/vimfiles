@@ -49,11 +49,31 @@ colorscheme vibrantink
 " Setting ctermbg to none so the transparent background from gnome-terminal works for vibrantink
 highlight Normal ctermbg=none
 
-function ClearTrailingSpaces()
-  %s/\s\+$//g
+function ClearTrailingSpaces() range
+  if a:firstline == a:lastline
+    let rang = '%'
+  else
+    let rang = a:firstline .','. a:lastline
+  endif
+  execute rang . 's/\s\+$//g'
 endfunction
 
-command ClearTrailingSpaces call ClearTrailingSpaces()
+command -range ClearTrailingSpaces <line1>,<line2>call ClearTrailingSpaces()
+
+" Enable Specky
+let g:speckyBannerKey = "\sb"
+let g:speckyQuoteSwitcherKey = "\sq"
+let g:speckyRunRdocKey = "\sd"
+let g:speckySpecSwitcherKey = "\sx"
+let g:speckyRunSpecKey = "\ss"
+let g:speckyRunSpecCmd = "spec -cfs"
+"-r loadpath.rb"
+let g:speckyRunRdocCmd = "ri -L -f plain"
+let g:speckyWindowType = 2
+
+"##############################################################################
+"### M A P P I N G S
+"##############################################################################
 
 " Mapping leader_key (defaults to \) + p to show NERDTree.
 " \p -> toggle NERDTree
@@ -69,3 +89,8 @@ nmap <silent> <C-B> :BufExplorer<CR>
 
 " Mapping CTRL + L to insert => (hashrocket)
 imap <c-l> <space>=><space>
+
+" Mapping Align to work propperly with Cucumber::Ast Tables
+map <leader>tc :Align!p1P1 \|<cr>=<cr>
+
+map gb :bn<cr>
