@@ -71,7 +71,7 @@ endfunction
 function! s:InsertPair(char)
     let l:next = s:GetNextChar()
     let l:result = a:char
-    if s:running && !s:IsForbidden(a:char) && (l:next == "\0" || l:next !~ '\w')
+    if s:running && !s:IsForbidden(a:char) && (l:next == "\0" || l:next !~ '[\w:]')
         let l:result .= s:charsToClose[a:char] . "\<Left>"
     endif
     return l:result
