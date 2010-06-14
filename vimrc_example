@@ -50,14 +50,21 @@ colorscheme vibrantink
 highlight Normal ctermbg=none
 
 function ClearTrailingSpaces() range
-  if a:firstline == a:lastline
-    let rang = '%'
+  let number_of_trailing_spaces = search('\s\+$', 'nw')
+  let has_trailing_spaces = number_of_trailing_spaces != 0
+  if has_trailing_spaces                     
+    if a:firstline == a:lastline
+      let rang = '%'
+    else
+      let rang = a:firstline .','. a:lastline
+    endif
+    let save_cursor = getpos(".")                    
+    execute rang . 's/\s\+$//g'
+    echo "lines cleared"
+    call setpos('.', save_cursor)
   else
-    let rang = a:firstline .','. a:lastline
+    echo "no trailing spaces found"
   endif
-  let save_cursor = getpos(".")
-  execute rang . 's/\s\+$//g'
-  call setpos('.', save_cursor)
 endfunction
 
 command -range ClearTrailingSpaces <line1>,<line2>call ClearTrailingSpaces()
