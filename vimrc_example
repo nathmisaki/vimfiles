@@ -55,7 +55,9 @@ function ClearTrailingSpaces() range
   else
     let rang = a:firstline .','. a:lastline
   endif
+  let save_cursor = getpos(".")
   execute rang . 's/\s\+$//g'
+  call setpos('.', save_cursor)
 endfunction
 
 command -range ClearTrailingSpaces <line1>,<line2>call ClearTrailingSpaces()
