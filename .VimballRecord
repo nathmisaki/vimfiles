@@ -24,3 +24,4 @@ textile.vba: call delete('/home/nelson/.vim/doc/textile.txt')|call delete('/home
 ragtag.vba: call delete('/home/nelson/.vim/plugin/ragtag.vim')|call delete('/home/nelson/.vim/doc/ragtag.txt')
 autoclose.vba: call delete('/home/nelson/.vim/plugin/autoclose.vim')
 specky.vba: call delete('/home/nelson/.vim/syntax/rdoc.vim')|call delete('/home/nelson/.vim/syntax/specrun.vim')|call delete('/home/nelson/.vim/syntax/rspec.vim')|call delete('/home/nelson/.vim/ftdetect/rspec.vim')|call delete('/home/nelson/.vim/ftplugin/rspec.vim')|call delete('/home/nelson/.vim/doc/specky.txt')|call delete('/home/nelson/.vim/plugin/specky.vim')|call delete('/home/nelson/.vim/snippets/rspec.snippets')
+web-indent.vba: call delete('/home/nelson/.vim/indent/javascript.vim')
