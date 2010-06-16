@@ -46,6 +46,7 @@ let g:syntastic_enable_signs=1
 " set default colorscheme
 " Use :SCROLLCOLOR to see all colors
 colorscheme vibrantink
+
 " Setting ctermbg to none so the transparent background from gnome-terminal works for vibrantink
 highlight Normal ctermbg=none
 
