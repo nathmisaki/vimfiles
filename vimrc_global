@@ -103,14 +103,15 @@ endfunction
 "catch
 "  source $HOMEPATH\vimfiles\snippets\support_functions.vim
 "endtry
+
 autocmd vimenter * call s:SetupSnippets()
 function! s:SetupSnippets()
 
     "if we're in a rails env then read in the rails snippets
-    if filereadable("./config/environment.rb")
-        call ExtractSnipsFile(expand("~/.vim/snippets/ruby-rails.snippets"), "ruby")
-        call ExtractSnipsFile(expand("~/.vim/snippets/eruby-rails.snippets"), "eruby")
-    endif
+    "if filereadable("./config/environment.rb")
+        "call ExtractSnipsFile(expand("~/.vim/snippets/ruby-rails.snippets"), "ruby")
+        "call ExtractSnipsFile(expand("~/.vim/snippets/eruby-rails.snippets"), "eruby")
+    "endif
 
     call ExtractSnipsFile(expand("~/.vim/snippets/html.snippets"), "eruby")
     call ExtractSnipsFile(expand("~/.vim/snippets/html.snippets"), "xhtml")
