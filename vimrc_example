@@ -97,10 +97,6 @@ map! <silent> <C-F> <Esc>:CommandT<CR>
 " Mapping CTRL + B to show BufferExplorer
 nmap <silent> <C-B> :BufExplorer<CR>
 
-" Mapping CTRL + L to insert => (hashrocket)
-imap <c-l> <space>=><space>
-
-" Mapping Align to work propperly with Cucumber::Ast Tables
-map <leader>tc :Align!p1P1 \|<cr>=<cr>
-
+" Mapping gb to work like gt(switch tabs) but with buffers
 map gb :bn<cr>
+
