@@ -142,3 +142,10 @@ let g:AutoCloseProtectedRegions = ["String", "Comment", "Character", "rubyString
 " Disabling some bugged filetypes ins syntax check
 let g:syntastic_disabled_filetypes = ["sass"]
 
+" Loading indentation styles to diferent filetypes
+" All commented by default. Open vimrc_indentation_styles and change it!
+try
+  source ~/.vim/vimrc_indentation_style
+catch
+  source ~/vimfiles/vimrc_indentation_style
+endtry
