@@ -144,6 +144,6 @@ let g:syntastic_disabled_filetypes = ["sass"]
 
 " Loading indentation styles to diferent filetypes
 " All commented by default. Open vimrc_indentation_styles and change it!
-if filereadable("~/.vimrc_indentation_style")
+if filereadable(glob("~/.vimrc_indentation_style"))
   source ~/.vimrc_indentation_style
 end
