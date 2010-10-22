@@ -70,6 +70,22 @@ endfunction
 
 command -range ClearTrailingSpaces <line1>,<line2>call ClearTrailingSpaces()
 
+function! ChangeFileencoding()
+  " Add more encodings here
+  let encodings = ['latin1', 'utf8']
+  let prompt_encs = []
+  let index = 0
+  while index < len(encodings)
+    call add(prompt_encs, index.'. '.encodings[index])
+    let index = index + 1
+  endwhile
+  let choice = inputlist(prompt_encs)
+  if choice >= 0 && choice < len(encodings)
+    execute 'e ++enc='.encodings[choice].' %:p'
+  endif
+endf
+nmap <F8> :call ChangeFileencoding()<CR>
+
 " Enable Specky
 let g:speckyBannerKey = "\sb"
 let g:speckyQuoteSwitcherKey = "\sq"
