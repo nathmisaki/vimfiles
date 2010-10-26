@@ -27,3 +27,4 @@ specky.vba: call delete('/home/nelson/.vim/syntax/rdoc.vim')|call delete('/home/
 web-indent.vba: call delete('/home/nelson/.vim/indent/javascript.vim')
 php_syntax.vba: call delete('/home/nelson/.vim/syntax/php.vim')
 php_indent.vba: call delete('/home/nelson/.vim/indent/php.vim')
+ack.vba: call delete('/home/nelson/.vim/doc/ack.txt')|call delete('/home/nelson/.vim/plugin/ack.vim')
