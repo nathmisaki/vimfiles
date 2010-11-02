@@ -28,8 +28,6 @@ let g:colors_name = "vibrantink"
 
 if has("gui_running")
     highlight Normal guifg=White   guibg=Black
-    highlight Folded guifg=DarkGrey    guibg=Black gui=italic
-    highlight FoldColumn guifg=Grey    guibg=Black
     highlight Cursor guifg=Black   guibg=Yellow
     highlight Keyword guifg=#FF6600
     highlight Define guifg=#FF6600
@@ -49,9 +47,7 @@ if has("gui_running")
     highlight CursorLine guibg=#323300
 else
     set t_Co=256
-    highlight Normal ctermfg=White ctermbg=none
-    highlight Folded ctermfg=DarkGrey  ctermbg=none
-    highlight FoldColumn ctermfg=Grey    ctermbg=none
+    highlight Normal ctermfg=White ctermbg=Black
     highlight Cursor ctermfg=Black ctermbg=Yellow 
     highlight Keyword ctermfg=202 
     highlight Define ctermfg=202 
@@ -70,3 +66,7 @@ else
     highlight Search ctermbg=White 
     highlight CursorLine cterm=NONE ctermbg=235
 endif
+highlight link DiffRemoved Special
+highlight link DiffAdded String
+highlight link DiffFile Underlined
+highlight link DiffNewFile Constant
