@@ -34,7 +34,7 @@ set sidescrolloff=7
 set sidescroll=1
 set number "show line numbers
 
-set nowrap      "dont wrap lines
+"set nowrap      "dont wrap lines
 set linebreak   "wrap lines at convenient points
 
 "only status line setup open to details
