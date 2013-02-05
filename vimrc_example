@@ -115,4 +115,4 @@ nmap <silent> <C-B> :BufExplorer<CR>
 
 " Mapping gb to work like gt(switch tabs) but with buffers
 map gb :bn<cr>
-
+set runtimepath^=~/.vim/bundle/ctrlp.vim
